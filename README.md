@@ -1,0 +1,1 @@
+# Rating-in-Vanilla-JS
