@@ -1,0 +1,96 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Exo", sans-serif;
+  display: block;
+  background: url(img/layer.png), url(img/peugeot.jpeg) no-repeat center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.content-wr {
+  max-height: 100vh;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.car_rating {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+select, input {
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  border: 1px solid #ffffff;;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 70px auto 50px;
+}
+
+table {
+  margin: 100px auto 20px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  table, select, input {
+  font-size: 16px;
+  }
+}
+
+td {
+  color: #eceff1;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
+.number-rating {
+  color: #b71c1c;
+  text-shadow: 2px #b71c1c;
+  margin-left: 20px;
+}

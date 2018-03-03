@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rating in Vanilla Js</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+</head>
+<body>
+  <div class="content-wr">
+    <h1>Rating in Vanilla JS</h1>
+      <div class="car_rating">
+        <select id="product-select">
+            <option value="0" disabled selected>Select a Vehicle</option>
+            <option value="peugeot">Peugeot 307</option>
+            <option value="vw">VW Golf 4</option>
+            <option value="ford">Ford Fiesta</option>
+            <option value="honda">Honda Civic</option>
+            <option value="scoda">Scoda Octavia</option>
+          </select>
+        <input type="number" id="rating-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+      </div>     
+      <table class="table">
+        <thead>
+          <tr>
+            <th>A Vehicle</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="peugeot">
+            <td>Peugeot 307</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="vw">
+            <td>VW Golf 4</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="ford">
+            <td>Ford Fiesta</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="honda">
+            <td>Honda Civic</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="scoda">
+            <td>Scoda Octavia</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
